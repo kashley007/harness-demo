@@ -6,7 +6,7 @@ module "asg" {
   lc_name = "example-lc"
   image_id        = "ami-06b263d6ceff0b3dd"
   instance_type   = "t2.micro"
-  security_groups = ["sg-12345678"]
+  security_groups = ["sg-7dbdd301"]
   ebs_block_device = [
     {
       device_name           = "/dev/xvdz"
@@ -23,7 +23,7 @@ module "asg" {
   ]
   # Auto scaling group
   asg_name                  = "hello-world-asg"
-  vpc_zone_identifier       = ["subnet-1235678", "subnet-87654321"]
+  vpc_zone_identifier       = ["subnet-0057306ea704c21c7", "subnet-0057306ea704c21c7"]
   health_check_type         = "EC2"
   min_size                  = 0
   max_size                  = 1
