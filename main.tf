@@ -3,7 +3,7 @@ module "asg" {
   version = "~> 3.0"
   name = "hello-world-sample-app"
   # Launch configuration
-  lc_name = "example-lc"
+  lc_name = "hello-world-lc"
   image_id        = "ami-06b263d6ceff0b3dd"
   instance_type   = "t2.micro"
   security_groups = ["sg-7dbdd301"]
