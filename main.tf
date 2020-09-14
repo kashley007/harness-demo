@@ -29,7 +29,7 @@ module "asg" {
   max_size                  = 1
   desired_capacity          = 1
   wait_for_capacity_timeout = 0
-  user_data_base64 = "echo 'hello world'"
+  user_data_base64 = base64encode("echo 'hello world'")
   tags = [
     {
       key                 = "Environment"
